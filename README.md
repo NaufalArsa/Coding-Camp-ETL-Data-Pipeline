@@ -28,12 +28,13 @@ This project automates the process of extracting product data from a simulated e
 ```
 📦 project-root/
 ├── utils/
-│   ├── fetch.py           # Fetches HTML content
 │   ├── extract.py         # Parses HTML and extracts data
 │   ├── transform.py       # Cleans and transforms raw data
 │   ├── load.py            # Loads data into SQL DB
-├── test/
-│   └── test_extract.py    # Unit tests
+├── test/                  # Unit tests
+│   ├── test_extract.py    
+|   ├── test_load.py
+|   ├── test_transform.py
 ├── main.py                # Main orchestration script
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
